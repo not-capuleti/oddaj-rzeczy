@@ -1,7 +1,15 @@
-@import-normalize;
+@import '../../node_modules/reset-css/sass/reset';
 @import "./settings/fonts";
 @import "./settings/colors";
+@import './components/home';
 
-body {
-	font-family: $font-base;
+html {
+	font-size: 16px;
+	body {
+		font-family: $font-base;
+		height: 100%;
+		#root {
+			height: 100%;
+		}
+	}
 }
