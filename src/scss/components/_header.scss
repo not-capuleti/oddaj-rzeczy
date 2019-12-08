@@ -1,0 +1,19 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 8vw;
+	.photo {
+		width: 70vw;
+		.photo__img {
+			max-width: 100%;
+			margin-left: -35%;
+		}
+	}
+	.menu {
+		a {
+			text-decoration: none;
+			color: $login-btns-text-color;
+			font-size: 0.85rem;
+		}
+	}
+}

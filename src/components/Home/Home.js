@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeHeader from './HomeHeader';
+import HomeHeader from './Header/HomeHeader';
 
 class Home extends Component {
 	render() {

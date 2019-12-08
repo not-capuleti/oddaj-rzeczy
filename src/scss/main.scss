@@ -1,27 +1,15 @@
+@import '../../node_modules/reset-css/sass/reset';
 @import "./settings/fonts";
 @import "./settings/colors";
-@import '../../node_modules/reset-css/sass/reset';
+@import './components/home';
 
-body {
-	font-family: $font-base;
-	height: 100%;
-	#root {
+html {
+	font-size: 16px;
+	body {
+		font-family: $font-base;
 		height: 100%;
-	}
-}
-
-header {
-	display: flex;
-	justify-content: space-between;
-	.photo {
-		margin-left: -25%;
-		height: auto;
-		overflow: auto;
-		width: 70%;
-		.photo__img {
-			max-width: 100%;
-			float: right;
-			height: auto;
+		#root {
+			height: 100%;
 		}
 	}
 }
