@@ -1,14 +1,10 @@
-@import-normalize;
 @import "./settings/fonts";
 @import "./settings/colors";
+@import '../../node_modules/reset-css/sass/reset';
 
-html,
 body {
-	margin: 0;
-	padding: 0;
 	font-family: $font-base;
 	height: 100%;
-	box-sizing: border-box;
 	#root {
 		height: 100%;
 	}
