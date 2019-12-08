@@ -1,19 +1,27 @@
-header {
+.header {
 	display: flex;
-	justify-content: space-between;
-	margin-right: 8vw;
-	.photo {
-		width: 70vw;
-		.photo__img {
+	justify-content: center;
+	.header__photo {
+		width: 75%;
+		margin-left: -25%;
+		.header__photo_img {
 			max-width: 100%;
-			margin-left: -35%;
 		}
 	}
-	.menu {
+	.header__menu {
+		text-align: right;
 		a {
 			text-decoration: none;
 			color: $login-btns-text-color;
-			font-size: 0.85rem;
+			font-size: 1.1vw;
+		}
+		.header__menu__nav {
+			a {
+				color: $header-text-color;
+				font-size: 1.2vw;
+				padding-left: 3vw;
+				cursor: pointer;
+			}
 		}
 	}
 }

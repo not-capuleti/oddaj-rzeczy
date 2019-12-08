@@ -5,7 +5,7 @@ import HeaderImg from './HeaderImg';
 class HomeHeader extends Component {
 	render() {
 		return (
-			<header>
+			<header className="header">
 				<HeaderImg />
 				<TopMenu />
 			</header>
