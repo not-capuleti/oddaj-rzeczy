@@ -1,27 +1,45 @@
 .header {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
+	position: relative;
+	margin-left: -25%;
+	padding-right: 5%;
 	.header__photo {
-		width: 75%;
-		margin-left: -25%;
+		width: 60%;
 		.header__photo_img {
 			max-width: 100%;
 		}
 	}
 	.header__menu {
 		text-align: right;
+		padding-top: 1.5vw;
 		a {
 			text-decoration: none;
 			color: $login-btns-text-color;
 			font-size: 1.1vw;
+			padding: 0 .5vw;
 		}
 		.header__menu__nav {
+			padding-top: 1.5vw;
 			a {
 				color: $header-text-color;
 				font-size: 1.2vw;
-				padding-left: 3vw;
+				padding-left: 2.5vw;
 				cursor: pointer;
 			}
+		}
+	}
+	.header__intro {
+		position: absolute;
+		top: 35%;
+		left: 58%;
+		h1 {
+			white-space: pre-wrap;
+			font-size: 2.4vw;
+			color: $header-text-color;
+			text-align: center;
+			line-height: 1.4em;
+			letter-spacing: -0.05em;
 		}
 	}
 }

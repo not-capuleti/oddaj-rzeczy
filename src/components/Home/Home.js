@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import HomeHeader from './Header/HomeHeader';
+import Header from './Header/Header';
 
 class Home extends Component {
 	render() {
-		return <HomeHeader />;
+		return <Header />;
 	}
 }
 
