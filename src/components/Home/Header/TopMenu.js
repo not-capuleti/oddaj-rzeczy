@@ -8,7 +8,9 @@ class TopMenu extends Component {
 			<Fragment>
 				<div className="header__menu">
 					<Link to="/logowanie">Zaloguj</Link>
-					<Link to="/rejestracja">Załóż konto</Link>
+					<Link id="sign-in" to="/rejestracja">
+						Załóż konto
+					</Link>
 					<Nav />
 				</div>
 			</Fragment>
