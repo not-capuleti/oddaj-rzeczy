@@ -4,7 +4,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import SignIn from './components/SignIn/SignIn';
 
-function App() {
+const App = () => {
 	return (
 		<Router>
 			<Switch>
@@ -14,6 +14,6 @@ function App() {
 			</Switch>
 		</Router>
 	);
-}
+};
 
 export default App;
