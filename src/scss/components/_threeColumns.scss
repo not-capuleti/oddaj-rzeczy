@@ -21,15 +21,15 @@
 			p {
 				font-size: 1.1vw;
 				color: $base-text-color;
-				&:nth-of-type(1) {
-					font-size: 1.3vw;
-					padding: 2vw 0;
-					font-weight: 400;
-				}
-				&:nth-of-type(2) {
-					font-family: $font-alt;
-					font-weight: 300;
-				}
+			}
+			.column-title {
+				font-size: 1.3vw;
+				padding: 2vw 0;
+				font-weight: 400;
+			}
+			.column-description {
+				font-family: $font-alt;
+				font-weight: 300;
 			}
 		}
 	}

@@ -1,0 +1,35 @@
+.simple-steps {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: $base-text-color;
+	h2 {
+		padding: 4vw 0 2vw 0;
+		font-size: 2vw;
+	}
+	svg {
+		width: 20vw;
+	}
+	.simple-steps__icons {
+		width: 100%;
+		background-color: $simple-steps-icons-bg;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		padding: 5vw;
+		.simple-steps__icons-single {
+			width: 12%;
+			padding: 0 3vw;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+			.icon-title {
+				font-size: 1.4vw;
+			}
+			.icon-description {
+				font-size: 1.2vw;
+			}
+		}
+	}
+}
