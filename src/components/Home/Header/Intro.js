@@ -1,5 +1,5 @@
 import React from 'react';
-import Decoration from './Decoration';
+import Decoration from '../svgComponents/Decoration';
 import IntroBtns from './IntroBtns';
 
 const Intro = () => {
