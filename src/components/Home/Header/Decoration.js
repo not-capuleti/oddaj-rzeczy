@@ -3,7 +3,15 @@ import React, { Component } from 'react';
 class Decoration extends Component {
 	render() {
 		return (
-			<svg xmlns="http://www.w3.org/2000/svg" width="253" height="33" viewBox="0 0 253 33">
+			<svg
+				aria-labelledby="decoration"
+				role="img"
+				xmlns="http://www.w3.org/2000/svg"
+				width="253"
+				height="33"
+				viewBox="0 0 253 33"
+			>
+				<title id="decoration">Decorative line</title>
 				<defs>
 					<clipPath id="a">
 						<rect width="253" height="33" fill="none" />

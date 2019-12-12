@@ -57,7 +57,10 @@
 		}
 		.header__intro__btn {
 			padding-top: 3vw;
+			display: flex;
 			a {
+				display: block;
+				width: 18vw;
 				font-size: 2vw;
 				font-family: $font-base;
 				font-weight: 300;
@@ -67,8 +70,12 @@
 				background-color: transparent;
 				border: .75px solid $header-text-color;
 				cursor: pointer;
+				padding: 1.2vw 0;
 				&:first-of-type {
 					margin-right: 1.5vw;
+				}
+				span {
+					display: block;
 				}
 			}
 		}
