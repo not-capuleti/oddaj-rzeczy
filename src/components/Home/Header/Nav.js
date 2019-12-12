@@ -13,8 +13,8 @@ class Nav extends Component {
 
 		return (
 			<nav className="header__menu__nav">
-				{navElements.map((element) => (
-					<Link to={element.to} spy={true} smooth={true} offset={0} duration={500}>
+				{navElements.map((element, idx) => (
+					<Link key={`${element}_${idx}`} to={element.to} spy={true} smooth={true} offset={0} duration={500}>
 						{element.title}
 					</Link>
 				))}

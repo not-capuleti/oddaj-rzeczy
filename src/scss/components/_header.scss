@@ -22,6 +22,10 @@
 			font-size: 1.1vw;
 			padding: 0 .5vw;
 		}
+		#sign-in {
+			border: 1px solid $signin-btn-border;
+			padding: .5vw .3vw;
+		}
 		.header__menu__nav {
 			padding-top: 1.5vw;
 			a {
@@ -58,6 +62,7 @@
 				font-family: $font-base;
 				font-weight: 300;
 				text-decoration: none;
+				text-align: center;
 				color: $header-text-color;
 				background-color: transparent;
 				border: .75px solid $header-text-color;
