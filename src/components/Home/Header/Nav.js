@@ -5,7 +5,7 @@ const Nav = () => {
 	const navElements = [
 		{ title: 'Start', to: '' },
 		{ title: 'O co chodzi?', to: 'simple-steps' },
-		{ title: 'O nas', to: '' },
+		{ title: 'O nas', to: 'about-us' },
 		{ title: 'Fundacja i organizacje', to: '' },
 		{ title: 'Kontakt', to: '' }
 	];
