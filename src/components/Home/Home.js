@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Header from './Header/Header';
 import ThreeColumns from './ThreeColumns/ThreeColumns';
 import SimpleSteps from './SimpleSteps/SimpleSteps';
+import AboutUs from './AboutUs/AboutUs';
 
 const Home = () => {
 	return (
@@ -9,6 +10,7 @@ const Home = () => {
 			<Header />
 			<ThreeColumns />
 			<SimpleSteps />
+			<AboutUs />
 		</Fragment>
 	);
 };
