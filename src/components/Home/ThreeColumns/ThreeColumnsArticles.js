@@ -24,11 +24,11 @@ const ThreeColumnsArticles = () => {
 
 	return (
 		<div className="three-columns__articles">
-			{columns.map((column) => (
-				<article>
+			{columns.map((column, idx) => (
+				<article key={idx}>
 					<span>{column.number}</span>
-					<p>{column.title.toUpperCase()}</p>
-					<p>{column.description}</p>
+					<p className="column-title">{column.title.toUpperCase()}</p>
+					<p className="column-description">{column.description}</p>
 				</article>
 			))}
 		</div>

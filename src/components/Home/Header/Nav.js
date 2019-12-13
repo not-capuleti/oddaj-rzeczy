@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 const Nav = () => {
 	const navElements = [
 		{ title: 'Start', to: '' },
-		{ title: 'O co chodzi?', to: '' },
+		{ title: 'O co chodzi?', to: 'simple-steps' },
 		{ title: 'O nas', to: '' },
 		{ title: 'Fundacja i organizacje', to: '' },
 		{ title: 'Kontakt', to: '' }
