@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Decoration from '../svgComponents/Decoration';
-import WhoWeHelpBtns from './WhoWeHelpBtns';
+import WhoWeHelpBtns from './WhoWeHelpList';
 
 class WhoWeHelp extends Component {
 	render() {
