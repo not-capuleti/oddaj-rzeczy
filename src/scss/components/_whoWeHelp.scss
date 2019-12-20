@@ -1,0 +1,43 @@
+@import "../settings/colors";
+@import "../settings/fonts";
+
+.who-we-help {
+	color: $base-text-color;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		padding: 4vw 0 2vw 0;
+		font-size: 2vw;
+	}
+	svg {
+		width: 20vw;
+	}
+	.who-we-help__btns {
+		font-family: $font-base;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		padding: 3vw 0;
+		button {
+			border: none;
+			background-color: transparent;
+			font-size: 1.4vw;
+			color: $base-text-color;
+			padding-left: 4vw;
+			padding-right: 4vw;
+			cursor: pointer;
+			&:active {
+				border: 0.75px solid $base-text-color;
+			}
+			span {
+				display: block;
+			}
+		}
+	}
+	p {
+		width: 37%;
+		text-align: center;
+		line-height: 1.5;
+	}
+}

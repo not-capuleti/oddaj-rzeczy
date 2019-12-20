@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import ThreeColumns from './ThreeColumns/ThreeColumns';
 import SimpleSteps from './SimpleSteps/SimpleSteps';
 import AboutUs from './AboutUs/AboutUs';
+import WhoWeHelp from './WhoWeHelp/WhoWeHelp';
 
 const Home = () => {
 	return (
@@ -11,6 +12,7 @@ const Home = () => {
 			<ThreeColumns />
 			<SimpleSteps />
 			<AboutUs />
+			<WhoWeHelp />
 		</Fragment>
 	);
 };
