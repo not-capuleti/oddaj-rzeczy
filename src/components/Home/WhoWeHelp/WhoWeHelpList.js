@@ -13,7 +13,7 @@ class WhoWeHelpList extends Component {
 	}
 
 	render() {
-		return <WhoWeHelpBtns clickHandler={this.clickHandler} />;
+		return <WhoWeHelpBtns clickHandler={this.clickHandler.bind(this)} />;
 	}
 }
 
