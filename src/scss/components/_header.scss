@@ -33,6 +33,10 @@
 				font-size: 1.2vw;
 				padding-left: 2.5vw;
 				cursor: pointer;
+				&:first-child {
+					border: 0.75px solid $base-text-color;
+					padding: .5vw 1vw;
+				}
 			}
 		}
 	}

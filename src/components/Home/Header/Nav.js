@@ -6,7 +6,7 @@ const Nav = () => {
 		{ title: 'Start', to: '' },
 		{ title: 'O co chodzi?', to: 'simple-steps' },
 		{ title: 'O nas', to: 'about-us' },
-		{ title: 'Fundacja i organizacje', to: '' },
+		{ title: 'Fundacja i organizacje', to: 'who-we-help' },
 		{ title: 'Kontakt', to: '' }
 	];
 
