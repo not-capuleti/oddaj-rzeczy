@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Decoration from '../svgComponents/Decoration';
-import WhoWeHelpBtns from './WhoWeHelpList';
+import WhoWeHelpList from './WhoWeHelpList';
 
 class WhoWeHelp extends Component {
 	render() {
@@ -8,7 +8,7 @@ class WhoWeHelp extends Component {
 			<section className="who-we-help">
 				<h2>Komu pomagamy?</h2>
 				<Decoration />
-				<WhoWeHelpBtns />
+				<WhoWeHelpList />
 			</section>
 		);
 	}

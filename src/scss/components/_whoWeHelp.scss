@@ -22,22 +22,39 @@
 		button {
 			border: none;
 			background-color: transparent;
-			font-size: 1.4vw;
+			font-size: 1.6vw;
 			color: $base-text-color;
-			padding-left: 4vw;
-			padding-right: 4vw;
+			padding: 0 2vw;
+			margin: 0 2vw;
 			cursor: pointer;
-			&:active {
-				border: 0.75px solid $base-text-color;
-			}
 			span {
 				display: block;
 			}
 		}
+		.who-we-help__btns-active {
+			border: 0.75px solid $base-text-color;
+		}
 	}
-	p {
-		width: 37%;
-		text-align: center;
-		line-height: 1.5;
+	.who-we-help__subjects {
+		.who-we-help__subjects-descript {
+			width: 37vw;
+			text-align: center;
+			font-size: 1.42vw;
+			line-height: 1.2;
+		}
+		.who-we-help__subjects-list {
+			padding: 4vw 0;
+		}
+		.who-we-help__pagination {
+			display: flex;
+			justify-content: center;
+			li {
+				padding: 1vw;
+			}
+		}
 	}
+}
+
+.who-we-help__btns-active {
+	border: 0.75px solid $base-text-color;
 }
