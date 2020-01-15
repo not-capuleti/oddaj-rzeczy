@@ -22,10 +22,15 @@ export class ListOfSubjects extends Component {
 		const renderSubjects = currentSubjects.map((subject, index) => {
 			return (
 				<li className="who-we-help__subjects-list-subject" key={index}>
-					<p>
-						{subject.type} {subject.name}
-					</p>
-					<p>{subject.task}</p>
+					<div>
+						<p className="who-we-help__subjects-list-subject-name">
+							{this.props.type} "{subject.name}""
+						</p>
+						<p className="who-we-help__subjects-list-subject-task">{subject.task}</p>
+					</div>
+					<div className="who-we-help__subjects-list-subject-needs">
+						<p>{subject.needs.join(', ')}</p>
+					</div>
 				</li>
 			);
 		});

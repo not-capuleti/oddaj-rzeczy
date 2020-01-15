@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import WhoWeHelpBtns from './WhoWeHelpBtns';
 import Foundations from './typeOfHelpers/Foundations';
+import Ngos from './typeOfHelpers/Ngos';
+import Locals from './typeOfHelpers/Locals';
 
 class WhoWeHelpList extends Component {
 	state = {
@@ -21,11 +23,9 @@ class WhoWeHelpList extends Component {
 		if (clicked === 'foundations') {
 			typeOfHelpers = <Foundations />;
 		} else if (clicked === 'ngos') {
-			// typeOfHelpers = <Ngos />;
-			typeOfHelpers = null;
+			typeOfHelpers = <Ngos />;
 		} else if (clicked === 'locals') {
-			// typeOfHelpers = <Locals />;
-			typeOfHelpers = null;
+			typeOfHelpers = <Locals />;
 		}
 
 		return (

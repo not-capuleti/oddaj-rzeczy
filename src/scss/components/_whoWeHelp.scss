@@ -24,7 +24,7 @@
 			background-color: transparent;
 			font-size: 1.6vw;
 			color: $base-text-color;
-			padding: 0 2vw;
+			padding: .5vw 2vw;
 			margin: 0 2vw;
 			cursor: pointer;
 			span {
@@ -37,19 +37,42 @@
 	}
 	.who-we-help__subjects {
 		.who-we-help__subjects-descript {
-			width: 37vw;
+			width: 40vw;
 			text-align: center;
 			font-size: 1.42vw;
 			line-height: 1.2;
+			margin: 0 auto;
 		}
 		.who-we-help__subjects-list {
-			padding: 4vw 0;
+			padding: 3vw 0 2vw 0;
+			font-family: $font-alt;
+			font-weight: 300;
+			width: 70vw;
+			line-height: 1.5;
+			font-size: 1.3vw;
+			.who-we-help__subjects-list-subject {
+				display: flex;
+				justify-content: space-between;
+				padding: 2vw 0;
+				&:nth-child(even) {
+					border-top: 1px solid $base-text-color;
+					border-bottom: 1px solid $base-text-color;
+				}
+				.who-we-help__subjects-list-subject-name {
+					font-size: 1.7vw;
+				}
+				.who-we-help__subjects-list-subject-needs {
+					align-self: center;
+				}
+			}
 		}
 		.who-we-help__pagination {
 			display: flex;
 			justify-content: center;
 			li {
 				padding: 1vw;
+				cursor: pointer;
+				margin: 0 1vw;
 			}
 		}
 	}
