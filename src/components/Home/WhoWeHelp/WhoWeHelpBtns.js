@@ -11,10 +11,16 @@ class WhoWeHelpBtns extends Component {
 				>
 					Fundacjom
 				</button>
-				<button onClick={() => clickHandler('ngos')}>
+				<button
+					className={clicked === 'ngos' ? 'who-we-help__btns-active' : null}
+					onClick={() => clickHandler('ngos')}
+				>
 					Organizacjom <span>pozarządowym</span>
 				</button>
-				<button onClick={() => clickHandler('locals')}>
+				<button
+					className={clicked === 'locals' ? 'who-we-help__btns-active' : null}
+					onClick={() => clickHandler('locals')}
+				>
 					Lokalnym <span>zbiórkom</span>
 				</button>
 			</nav>

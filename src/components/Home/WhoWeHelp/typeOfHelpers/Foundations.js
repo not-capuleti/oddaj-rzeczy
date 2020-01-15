@@ -6,7 +6,7 @@ class Fundations extends Component {
 		type: 'Fundacja',
 		description:
 			'W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują',
-		fundations: [
+		foundations: [
 			{
 				name: 'Dbam o zdrowie',
 				task: 'Pomoc osobom znajdującym się w trudnej sytuacji życiowej',
@@ -46,8 +46,8 @@ class Fundations extends Component {
 	};
 
 	render() {
-		const { description, fundations, type } = this.state;
-		return <ListOfSubjects description={description} organization={fundations} type={type} />;
+		const { description, foundations, type } = this.state;
+		return <ListOfSubjects description={description} organization={foundations} type={type} />;
 	}
 }
 

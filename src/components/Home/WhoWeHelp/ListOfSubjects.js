@@ -28,7 +28,7 @@ export class ListOfSubjects extends Component {
 						</p>
 						<p className="who-we-help__subjects-list-subject-task">{subject.task}</p>
 					</div>
-					<div class="who-we-help__subjects-list-subject-needs">
+					<div className="who-we-help__subjects-list-subject-needs">
 						<p>{subject.needs.join(', ')}</p>
 					</div>
 				</li>
