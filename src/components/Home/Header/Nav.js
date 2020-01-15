@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 
 const Nav = () => {
 	const navElements = [
-		{ title: 'Start', to: '' },
+		{ title: 'Start', to: 'header' },
 		{ title: 'O co chodzi?', to: 'simple-steps' },
 		{ title: 'O nas', to: 'about-us' },
 		{ title: 'Fundacja i organizacje', to: 'who-we-help' },

@@ -1,12 +1,12 @@
 @import "../settings/colors";
 @import "../settings/fonts";
+@import "../mixins/header";
 
 .header {
 	display: flex;
 	justify-content: space-between;
 	position: relative;
 	margin-left: -25%;
-	padding-right: 5%;
 	.header__photo {
 		width: 60%;
 		.header__photo_img {
@@ -14,31 +14,7 @@
 		}
 	}
 	.header__menu {
-		text-align: right;
-		padding-top: 1.5vw;
-		a {
-			text-decoration: none;
-			color: $login-btns-text-color;
-			font-size: 1.1vw;
-			padding: 0 .5vw;
-		}
-		#sign-in {
-			border: 1px solid $signin-btn-border;
-			padding: .5vw .3vw;
-		}
-		.header__menu__nav {
-			padding-top: 1.5vw;
-			a {
-				color: $base-text-color;
-				font-size: 1.2vw;
-				padding-left: 2.5vw;
-				cursor: pointer;
-				&:first-child {
-					border: 0.75px solid $base-text-color;
-					padding: .5vw 1vw;
-				}
-			}
-		}
+		@include headerMenu;
 	}
 	.header__intro {
 		position: absolute;

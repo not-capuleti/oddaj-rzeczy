@@ -1,0 +1,24 @@
+@mixin headerMenu {
+	text-align: right;
+	padding-top: 1.5vw;
+	padding-right: 4vw;
+	a {
+		text-decoration: none;
+		color: $login-btns-text-color;
+		font-size: 1.1vw;
+		padding: 0 .5vw;
+	}
+	#sign-in {
+		border: 1px solid $signin-btn-border;
+		padding: .5vw .3vw;
+	}
+	.header__menu__nav {
+		padding-top: 1.5vw;
+		a {
+			color: $base-text-color;
+			font-size: 1.2vw;
+			padding-left: 2.5vw;
+			cursor: pointer;
+		}
+	}
+}
