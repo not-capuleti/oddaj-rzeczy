@@ -24,7 +24,7 @@ export class ListOfSubjects extends Component {
 				<li className="who-we-help__subjects-list-subject" key={index}>
 					<div>
 						<p className="who-we-help__subjects-list-subject-name">
-							{this.props.type} "{subject.name}""
+							{this.props.type} "{subject.name}"
 						</p>
 						<p className="who-we-help__subjects-list-subject-task">{subject.task}</p>
 					</div>
@@ -41,6 +41,10 @@ export class ListOfSubjects extends Component {
 		}
 
 		const renderPageNumbers = pageNumbers.map((number) => {
+			if (pageNumbers.length === 1) {
+				return null;
+			}
+
 			return (
 				<li
 					className={this.state.currentPage === number ? 'who-we-help__btns-active' : null}

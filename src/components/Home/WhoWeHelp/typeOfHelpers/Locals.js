@@ -21,21 +21,6 @@ class Locals extends Component {
 				name: 'Lorem Ipsum 3',
 				task: 'Scelerisque in dictum non consectetur a erat nam.',
 				needs: [ 'Mi', 'quis', 'hendrerit', 'dolor' ]
-			},
-			{
-				name: 'Lorem Ipsum 4',
-				task: 'Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.',
-				needs: [ 'Ut', 'aliquam', 'purus', 'sit', 'amet' ]
-			},
-			{
-				name: 'Lorem Ipsum 5',
-				task: 'Scelerisque in dictum non consectetur a erat nam.',
-				needs: [ 'Mi', 'quis', 'hendrerit', 'dolor' ]
-			},
-			{
-				name: 'Lorem Ipsum 6',
-				task: 'Pomoc osobom znajdującym się w trudnej sytuacji życiowej',
-				needs: [ 'arcu', 'molestie', 'lobortis' ]
 			}
 		]
 	};
