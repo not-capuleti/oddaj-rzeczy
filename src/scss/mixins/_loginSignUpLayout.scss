@@ -16,11 +16,6 @@
 	.login-signup-layout__form {
 		width: 30vw;
 		background-color: $secondary-bg-color;
-		.error-input-border {
-			input[type=text] {
-				border-bottom: 1px solid $input-error-color;
-			}
-		}
 		form {
 			display: flex;
 			flex-direction: column;
@@ -31,12 +26,15 @@
 				font-weight: 600;
 				margin-top: 2vw;
 			}
-			input[type=text] {
+			input {
 				border: none;
 				border-bottom: 1px solid $input-bottom-border;
 				background-color: $secondary-bg-color;
 				height: 2vw;
 				margin-top: 1vw;
+			}
+			.error-input-border {
+				border-bottom: 1px solid $input-error-color;
 			}
 			.error {
 				color: $input-error-color;

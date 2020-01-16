@@ -6,42 +6,33 @@ class Login extends Component {
 	state = {
 		email: '',
 		password: '',
-		errors: [],
-		isSubmitted: false
+		emailError: '',
+		passwordError: ''
 	};
 
 	setUserData = (e) => {
+		this.setState({ [e.target.name]: e.target.value });
+	};
+
+	handleSubmit = (e) => {
+		e.preventDefault();
+		const { password, email } = this.state;
+
 		this.setState({
-			[e.target.name]: e.target.value
+			passwordError: password.length > 5 ? '' : 'Podane hasło jest za krótkie!',
+			emailError: email.includes('@') ? '' : 'Podany email jest nieprawidłowy!'
 		});
 	};
 
-	validation = (e) => {
-		const errors = [];
-		const isSubmitted = true;
-		const { email, password } = this.state;
-
-		e.preventDefault();
-
-		if (!email.includes('@')) {
-			errors.push('Podany email jest nieprawidłowy!');
-		}
-		if (password.length < 6) {
-			errors.push('Podane hasło jest za krótkie!');
-		}
-
-		this.setState({ errors, isSubmitted });
-	};
-
 	render() {
-		const { email, password, errors, isSubmitted } = this.state;
+		const { email, password, emailError, passwordError } = this.state;
 
 		return (
 			<section className="login-signup-layout">
 				<h2>Zaloguj się</h2>
 				<Decoration />
 				<div className="login-signup-layout__form">
-					<form id="sign-up" onSubmit={this.validation} className={errors.length && 'error-input-border'}>
+					<form id="sign-up" onSubmit={emailError === '' && passwordError === '' ? this.handleSubmit : null}>
 						<label htmlFor="email">Email</label>
 						<input
 							type="text"
@@ -50,18 +41,20 @@ class Login extends Component {
 							key="email"
 							value={email}
 							onChange={this.setUserData}
+							className={emailError !== '' ? 'error-input-border' : null}
 						/>
-						{isSubmitted && errors.length ? <p className="error">{this.state.errors[0]}</p> : null}
+						<p className="error">{emailError}</p>
 						<label htmlFor="password">Hasło</label>
 						<input
-							type="text"
+							type="password"
 							name="password"
 							id="password"
 							key="password"
 							value={password}
 							onChange={this.setUserData}
+							className={passwordError !== '' ? 'error-input-border' : null}
 						/>
-						{isSubmitted && errors.length ? <p className="error">{this.state.errors[1]}</p> : null}
+						<p className="error">{passwordError}</p>
 					</form>
 				</div>
 				<div className="login-signup-layout__btns">
