@@ -23,7 +23,7 @@ class SignUp extends Component {
 		this.setState({
 			passwordError: password.length > 5 ? '' : 'Podane hasło jest za krótkie!',
 			emailError: email.includes('@') ? '' : 'Podany email jest nieprawidłowy!',
-			repeatPasswordError: repeatPassword === password ? '' : 'Hasła muszą być takie same'
+			repeatPasswordError: repeatPassword > 5 && repeatPassword === password ? '' : 'Hasła muszą być takie same'
 		});
 	};
 
