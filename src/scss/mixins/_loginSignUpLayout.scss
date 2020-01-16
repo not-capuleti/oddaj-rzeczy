@@ -16,22 +16,33 @@
 	.login-signup-layout__form {
 		width: 30vw;
 		background-color: $secondary-bg-color;
+		.error-input-border {
+			input[type=text] {
+				border-bottom: 1px solid $input-error-color;
+			}
+		}
 		form {
 			display: flex;
 			flex-direction: column;
 			font-size: 1.2vw;
-			padding: 2vw 4vw 0 4vw;
+			padding: 2vw 4vw;
 			margin: 0 auto;
 			label {
 				font-weight: 600;
+				margin-top: 2vw;
 			}
-			input {
+			input[type=text] {
 				border: none;
 				border-bottom: 1px solid $input-bottom-border;
 				background-color: $secondary-bg-color;
 				height: 2vw;
-				margin-bottom: 2vw;
 				margin-top: 1vw;
+			}
+			.error {
+				color: $input-error-color;
+				font-size: 1vw;
+				font-weight: 600;
+				line-height: 1.5;
 			}
 		}
 	}
@@ -40,13 +51,16 @@
 		display: flex;
 		justify-content: space-evenly;
 		padding-top: 2vw;
-		a {
+		a,
+		input[type=submit] {
+			border: none;
+			background-color: transparent;
 			text-decoration: none;
 			font-size: 1.3vw;
 			color: rgb(27, 23, 23);
 			padding: 1vw;
 		}
-		.login-signup-layout__btns-active {
+		input[type=submit] {
 			border: .75px solid $base-text-color;
 		}
 	}
