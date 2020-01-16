@@ -1,0 +1,68 @@
+@mixin loginSignupLayout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2vw;
+	h2 {
+		font-size: 2vw;
+		padding: 4vw 0 2vw 0;
+		white-space: pre-wrap;
+		text-align: center;
+	}
+	svg {
+		width: 15vw;
+		padding-bottom: 3vw;
+	}
+	.login-signup-layout__form {
+		width: 30vw;
+		background-color: $secondary-bg-color;
+		form {
+			display: flex;
+			flex-direction: column;
+			font-size: 1.2vw;
+			padding: 2vw 4vw;
+			margin: 0 auto;
+			label {
+				font-weight: 600;
+				margin-top: 2vw;
+			}
+			input {
+				border: none;
+				border-bottom: 1px solid $input-bottom-border;
+				background-color: $secondary-bg-color;
+				height: 2vw;
+				margin-top: 1vw;
+			}
+			.error-input-border {
+				border-bottom: 1px solid $input-error-color;
+			}
+			.error {
+				color: $input-error-color;
+				font-size: 1vw;
+				font-weight: 600;
+				line-height: 1.5;
+			}
+		}
+	}
+	.login-signup-layout__btns {
+		width: 90vw;
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 2vw;
+		a,
+		input[type=submit] {
+			border: none;
+			background-color: transparent;
+			text-decoration: none;
+			font-size: 1.3vw;
+			color: rgb(27, 23, 23);
+			padding: 1vw;
+		}
+		input[type=submit] {
+			border: .75px solid $base-text-color;
+		}
+	}
+	#home-btn {
+		padding-top: 0;
+	}
+}

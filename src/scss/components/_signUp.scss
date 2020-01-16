@@ -1,0 +1,10 @@
+@import "../components/header";
+@import "../mixins/loginSignUpLayout";
+
+.header__menu {
+	@include headerMenu;
+}
+
+.login-signup-layout {
+	@include loginSignupLayout;
+}

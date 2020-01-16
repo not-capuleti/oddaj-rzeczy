@@ -5,7 +5,9 @@ import Nav from './Nav';
 const TopMenu = () => {
 	return (
 		<div className="header__menu">
-			<Link to="/logowanie">Zaloguj</Link>
+			<Link id="login" to="/logowanie">
+				Zaloguj
+			</Link>
 			<Link id="sign-in" to="/rejestracja">
 				Załóż konto
 			</Link>

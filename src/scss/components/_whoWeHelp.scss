@@ -39,7 +39,7 @@
 		.who-we-help__subjects-descript {
 			width: 40vw;
 			text-align: center;
-			font-size: 1.42vw;
+			font-size: 1.3vw;
 			line-height: 1.2;
 			margin: 0 auto;
 		}
@@ -49,11 +49,11 @@
 			font-weight: 300;
 			width: 70vw;
 			line-height: 1.5;
-			font-size: 1.3vw;
+			font-size: 1.2;
 			.who-we-help__subjects-list-subject {
 				display: flex;
 				justify-content: space-between;
-				padding: 2vw 0;
+				padding: 1vw 0;
 				&:nth-child(even) {
 					border-top: 1px solid $base-text-color;
 					border-bottom: 1px solid $base-text-color;
