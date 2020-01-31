@@ -6,7 +6,7 @@ import Locals from './typeOfHelpers/Locals';
 
 class WhoWeHelpList extends Component {
 	state = {
-		clicked: ''
+		clicked: 'foundations'
 	};
 
 	clickHandler(org) {

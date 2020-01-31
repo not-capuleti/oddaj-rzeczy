@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Decoration from '../Home/svgComponents/Decoration';
+import AuthTopMenu from './AuthTopMenu';
 import { Link } from 'react-router-dom';
 
 class SignUp extends Component {
@@ -31,51 +32,57 @@ class SignUp extends Component {
 		const { email, password, repeatPassword, emailError, passwordError, repeatPasswordError } = this.state;
 
 		return (
-			<section className="login-signup-layout">
-				<h2>Załóż konto</h2>
-				<Decoration />
-				<div className="login-signup-layout__form">
-					<form id="sign-up" onSubmit={emailError === '' && passwordError === '' ? this.handleSubmit : null}>
-						<label htmlFor="email">Email</label>
-						<input
-							type="text"
-							name="email"
-							id="email"
-							key="email"
-							value={email}
-							onChange={this.setUserData}
-							className={emailError !== '' ? 'error-input-border' : null}
-						/>
-						<p className="error">{emailError}</p>
-						<label htmlFor="password">Hasło</label>
-						<input
-							type="password"
-							name="password"
-							id="password"
-							key="password"
-							value={password}
-							onChange={this.setUserData}
-							className={passwordError !== '' ? 'error-input-border' : null}
-						/>
-						<p className="error">{passwordError}</p>
-						<label htmlFor="repeatPassword">Powtórz hasło</label>
-						<input
-							type="password"
-							name="repeatPassword"
-							id="repeatPassword"
-							key="repeatPassword"
-							value={repeatPassword}
-							onChange={this.setUserData}
-							className={repeatPasswordError !== '' ? 'error-input-border' : null}
-						/>
-						<p className="error">{repeatPasswordError}</p>
-					</form>
-				</div>
-				<div className="login-signup-layout__btns">
-					<Link to="/logowanie">Zaloguj się</Link>
-					<input type="submit" value="Załóż konto" form="sign-up" id="login-btn" />
-				</div>
-			</section>
+			<Fragment>
+				<AuthTopMenu />
+				<section className="login-signup-layout">
+					<h2>Załóż konto</h2>
+					<Decoration />
+					<div className="login-signup-layout__form">
+						<form
+							id="sign-up"
+							onSubmit={emailError === '' && passwordError === '' ? this.handleSubmit : null}
+						>
+							<label htmlFor="email">Email</label>
+							<input
+								type="text"
+								name="email"
+								id="email"
+								key="email"
+								value={email}
+								onChange={this.setUserData}
+								className={emailError !== '' ? 'error-input-border' : null}
+							/>
+							<p className="error">{emailError}</p>
+							<label htmlFor="password">Hasło</label>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								key="password"
+								value={password}
+								onChange={this.setUserData}
+								className={passwordError !== '' ? 'error-input-border' : null}
+							/>
+							<p className="error">{passwordError}</p>
+							<label htmlFor="repeatPassword">Powtórz hasło</label>
+							<input
+								type="password"
+								name="repeatPassword"
+								id="repeatPassword"
+								key="repeatPassword"
+								value={repeatPassword}
+								onChange={this.setUserData}
+								className={repeatPasswordError !== '' ? 'error-input-border' : null}
+							/>
+							<p className="error">{repeatPasswordError}</p>
+						</form>
+					</div>
+					<div className="login-signup-layout__btns">
+						<Link to="/logowanie">Zaloguj się</Link>
+						<input type="submit" value="Załóż konto" form="sign-up" id="login-btn" />
+					</div>
+				</section>
+			</Fragment>
 		);
 	}
 }
